@@ -90,3 +90,39 @@ function copyAlias(){
     );
 
 }
+
+function sendConfirmation(){
+
+    const name = document.getElementById("name").value;
+
+    const attendance = document.getElementById("attendance").value;
+
+    const food = document.getElementById("food").value;
+
+
+    const message = 
+    `Hola Catalina ✨
+
+Soy ${name}.
+
+Confirmo mi asistencia:
+${attendance}
+
+Tipo de alimentación:
+${food}
+
+¡Gracias por la invitación! 💙`;
+
+
+    const phone = "5492243405031";
+
+
+    const url =
+    "https://wa.me/" + phone +
+    "?text=" +
+    encodeURIComponent(message);
+
+
+    window.open(url, "_blank");
+
+}
