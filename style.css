@@ -692,21 +692,3 @@ section h2{
     margin-bottom: 35px;
     padding-bottom:15px;
 }
-
-section h2::before,
-section h2::after{
-    content:"";
-    position:absolute;
-    top:50%;
-    width:28%;
-    height:1px;
-    background:#d8b5c3;
-}
-
-section h2::before{
-    left:0;
-}
-
-section h2::after{
-    right:0;
-}
