@@ -152,15 +152,66 @@
     </section>
 
 
-    <section class="confirm">
+<section class="confirm">
 
-        <h2>Confirmar asistencia</h2>
+    <h2>Confirmar asistencia</h2>
 
-        <a href="https://wa.me/5492243405031" target="_blank">
-            💌 Confirmar por WhatsApp
-        </a>
+    <p>
+        Completá tus datos para confirmar tu presencia ✨
+    </p>
 
-    </section>
+
+    <input 
+        type="text" 
+        id="name"
+        placeholder="Nombre y apellido"
+    >
+
+
+    <select id="attendance">
+
+        <option value="Sí, asistiré">
+            Sí, asistiré
+        </option>
+
+        <option value="No podré asistir">
+            No podré asistir
+        </option>
+
+    </select>
+
+
+
+    <select id="food">
+
+        <option value="Menú tradicional">
+            Menú tradicional
+        </option>
+
+        <option value="Vegetariano">
+            Vegetariano
+        </option>
+
+        <option value="Celíaco">
+            Celíaco
+        </option>
+
+        <option value="Otro">
+            Otro
+        </option>
+
+    </select>
+
+
+
+    <button onclick="sendConfirmation()">
+
+        💌 Enviar confirmación
+
+    </button>
+
+
+</section>
 
 
     <footer>
