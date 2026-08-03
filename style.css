@@ -656,3 +656,28 @@ to {
     box-shadow: 0 15px 35px rgba(180,120,150,0.20);
 
 }
+
+@media (max-width: 480px) {
+
+    .timer {
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+    }
+
+    .timer div {
+        width: 64px;
+        height: 64px;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .timer span {
+        font-size: 30px;
+    }
+
+    .timer small {
+        font-size: 12px;
+    }
+
+}
