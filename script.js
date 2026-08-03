@@ -157,5 +157,14 @@ function changeSlide(direction){
 
 }
 
+window.onload = function(){
+
+    document.getElementById("slideImage").src =
+    "assets/foto1.jpg";
+
+};
+
+
+
 
 
