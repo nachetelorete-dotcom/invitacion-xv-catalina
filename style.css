@@ -472,15 +472,17 @@ section {
 
 .thankyou {
 
-    margin-top:40px;
+    margin-top:60px;
 
-    padding:20px;
+    padding:50px 20px;
 
-    color:#8b4865;
+    background:#8b4865;
 
-    font-size:18px;
+    color:white;
 
     text-align:center;
+
+    font-size:18px;
 
 }
 
