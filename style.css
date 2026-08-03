@@ -714,3 +714,12 @@ section h2{
     object-fit:contain;
     margin-bottom:10px;
 }
+
+.location a:hover,
+.confirm a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(201,162,39,.35);
+
+}
