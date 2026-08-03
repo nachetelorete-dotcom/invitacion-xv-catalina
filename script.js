@@ -126,3 +126,33 @@ ${food}
     window.open(url, "_blank");
 
 }
+
+let currentSlide = 1;
+
+
+const totalSlides = 6;
+
+
+function changeSlide(direction){
+
+    currentSlide += direction;
+
+
+    if(currentSlide > totalSlides){
+
+        currentSlide = 1;
+
+    }
+
+
+    if(currentSlide < 1){
+
+        currentSlide = totalSlides;
+
+    }
+
+
+    document.getElementById("slideImage").src =
+    "assets/foto" + currentSlide + ".jpg";
+
+}
