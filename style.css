@@ -263,9 +263,9 @@ section {
 
 .timer span {
 
-    font-size:35px;
+    font-size:40px;
 
-    color:#8b4865;
+    color:#b76e8a;
 
     font-weight:bold;
 
@@ -627,11 +627,7 @@ to {
 }
 
 
-.timer span {
 
-    font-size:25px;
-
-}
 
 
 .slider img {
