@@ -230,11 +230,11 @@ section {
 
     justify-content:center;
 
-    gap:12px;
+    gap:8px;
 
     margin-top:35px;
 
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
 
 }
 
@@ -246,9 +246,9 @@ section {
 
     border-radius:25px;
 
-    width:80px;
+    width:70px;
 
-    height:80px;
+    height:70px;
 
     display:flex;
 
