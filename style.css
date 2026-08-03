@@ -696,7 +696,7 @@ section h2::before,
 section h2::after{
     content:"";
     position:absolute;
-    top:100%;
+    top:50%;
     width:28%;
     height:1px;
     background:#d8b5c3;
