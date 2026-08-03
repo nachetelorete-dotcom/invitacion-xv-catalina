@@ -484,6 +484,10 @@ section {
 
     font-size:18px;
 
+    width:100%;
+
+    box-sizing:border-box;
+
 }
 
 
