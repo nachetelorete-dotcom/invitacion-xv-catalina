@@ -156,3 +156,22 @@ function changeSlide(direction){
     "assets/foto" + currentSlide + ".jpg";
 
 }
+
+document
+.getElementById("prevBtn")
+.addEventListener("click", function(){
+
+    changeSlide(-1);
+
+});
+
+
+document
+.getElementById("nextBtn")
+.addEventListener("click", function(){
+
+    changeSlide(1);
+
+});
+
+
