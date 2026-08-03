@@ -212,11 +212,7 @@ section {
 ========================= */
 
 
-.countdown {
 
-    background:#fff;
-
-}
 
 
 .countdown h2 {
@@ -659,7 +655,7 @@ to {
 
 .countdown {
 
-    background: rgba(255,255,255,0.75);
+    background: rgba(255,255,255,0.85);
 
     border-radius: 25px;
 
@@ -671,6 +667,6 @@ to {
     
     max-width: 600px;
 
-    box-shadow: 0 10px 30px rgba(180,120,150,0.15);
+    box-shadow: 0 15px 35px rgba(180,120,150,0.20);
 
 }
