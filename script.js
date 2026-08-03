@@ -157,21 +157,5 @@ function changeSlide(direction){
 
 }
 
-document
-.getElementById("prevBtn")
-.addEventListener("click", function(){
-
-    changeSlide(-1);
-
-});
-
-
-document
-.getElementById("nextBtn")
-.addEventListener("click", function(){
-
-    changeSlide(1);
-
-});
 
 
