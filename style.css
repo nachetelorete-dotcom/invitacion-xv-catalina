@@ -698,3 +698,10 @@ section h2{
     font-size:30px;
     margin-bottom:6px;
 }
+
+.icono-seccion{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
