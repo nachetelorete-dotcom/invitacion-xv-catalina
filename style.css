@@ -808,11 +808,13 @@ section h2{
 
     opacity:0;
 
-    transform:translateY(30px);
+    transform:translateY(70px) scale(.95);
 
     transition:
-    opacity .7s ease,
-    transform .7s ease;
+        opacity 1s ease,
+        transform 1s cubic-bezier(.22,1,.36,1);
+
+    will-change:opacity, transform;
 
 }
 
@@ -820,6 +822,6 @@ section h2{
 
     opacity:1;
 
-    transform:translateY(0);
+    transform:translateY(0) scale(1);
 
 }
