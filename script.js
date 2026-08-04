@@ -18,6 +18,10 @@ function openInvitation() {
         invitation.classList.remove("hidden");
         invitation.classList.add("show-invitation");
 
+        document
+        .getElementById("musicButton")
+        .classList.remove("music-hidden");
+
         window.scrollTo({
             top:0,
             behavior:"smooth"
