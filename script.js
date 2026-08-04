@@ -9,7 +9,7 @@ function openInvitation() {
 
     setTimeout(() => {
 
-        welcome.style.display = "none";
+        welcome.remove();
 
         invitation.classList.remove("hidden");
 
