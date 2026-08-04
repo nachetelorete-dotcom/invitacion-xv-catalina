@@ -983,11 +983,7 @@ section h2{
 
 .music-hidden{
 
-    opacity:0;
-
-    visibility:hidden;
-
-    pointer-events:none;
+    display:none;
 
 }
 
