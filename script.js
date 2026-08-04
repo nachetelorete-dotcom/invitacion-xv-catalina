@@ -1,5 +1,9 @@
 function openInvitation() {
 
+    const music = document.getElementById("music");
+
+    music.play();
+
     const welcome = document.getElementById("welcome");
     const invitation = document.getElementById("invitation");
 
