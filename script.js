@@ -1,13 +1,25 @@
 function openInvitation() {
 
-    document.getElementById("welcome").style.display = "none";
+    const welcome = document.getElementById("welcome");
+    const invitation = document.getElementById("invitation");
 
-    document.getElementById("invitation").classList.remove("hidden");
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    welcome.classList.add("fade-out");
+
+
+    setTimeout(() => {
+
+        welcome.style.display = "none";
+
+        invitation.classList.remove("hidden");
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+
+    },1000);
 
 }
 
