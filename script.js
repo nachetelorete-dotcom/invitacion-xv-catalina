@@ -192,6 +192,135 @@ reveals.forEach(section => {
 
 });
 
+/* =========================
+   PÉTALOS CANVAS
+========================= */
+
+const canvas = document.getElementById("petalCanvas");
+const ctx = canvas.getContext("2d");
+
+let petals = [];
+
+
+function resizeCanvas(){
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+}
+
+
+resizeCanvas();
+
+
+window.addEventListener("resize", resizeCanvas);
+
+
+
+function createPetal(){
+
+    return {
+
+        x: Math.random() * canvas.width,
+
+        y: -20,
+
+        size: 8 + Math.random() * 8,
+
+        speed: 1 + Math.random() * 2,
+
+        sway: Math.random() * 2,
+
+        angle: Math.random() * Math.PI * 2
+
+    };
+
+}
+
+
+for(let i = 0; i < 18; i++){
+
+    petals.push(createPetal());
+
+}
+
+
+
+function animatePetals(){
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+
+    petals.forEach(p => {
+
+
+        p.y += p.speed;
+
+        p.x += Math.sin(p.angle) * p.sway;
+
+        p.angle += .02;
+
+
+        ctx.save();
+
+
+        ctx.translate(
+            p.x,
+            p.y
+        );
+
+
+        ctx.rotate(p.angle);
+
+
+        ctx.fillStyle =
+        "rgba(255,190,210,.45)";
+
+
+        ctx.beginPath();
+
+        ctx.ellipse(
+            0,
+            0,
+            p.size,
+            p.size / 2,
+            0,
+            0,
+            Math.PI * 2
+        );
+
+
+        ctx.fill();
+
+
+        ctx.restore();
+
+
+
+        if(p.y > canvas.height + 20){
+
+            p.y = -20;
+
+            p.x = Math.random() * canvas.width;
+
+        }
+
+
+    });
+
+
+    requestAnimationFrame(animatePetals);
+
+}
+
+
+animatePetals();
+
 
 
 
