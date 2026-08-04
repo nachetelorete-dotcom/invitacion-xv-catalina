@@ -366,6 +366,31 @@ function animatePetals(){
 
 animatePetals();
 
+function toggleMusic(){
+
+    const music =
+    document.getElementById("music");
+
+    const button =
+    document.getElementById("musicButton");
+
+
+    if(music.paused){
+
+        music.play();
+
+        button.innerHTML="🎵";
+
+    }else{
+
+        music.pause();
+
+        button.innerHTML="⏸";
+
+    }
+
+}
+
 
 
 
