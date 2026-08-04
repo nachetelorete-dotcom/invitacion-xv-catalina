@@ -127,11 +127,16 @@ button:hover {
 
 .hidden {
 
-    opacity:0;
+    display:none;
 
-    visibility:hidden;
+}
 
-    pointer-events:none;
+.show-invitation{
+
+    display:block;
+
+    animation:
+    aparecer 1.2s ease;
 
 }
 
