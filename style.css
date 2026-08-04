@@ -983,10 +983,9 @@ section h2{
 
 .music-hidden{
 
-    display:none;
+    display:none !important;
 
 }
-
 
 #musicButton:hover{
 
