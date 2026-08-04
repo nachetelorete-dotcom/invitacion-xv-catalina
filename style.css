@@ -943,13 +943,13 @@ section h2{
 
     position:fixed;
 
-    bottom:25px;
+    top:25px;
 
     right:25px;
 
-    width:55px;
+    width:42px;
 
-    height:55px;
+    height:42px;
 
     border-radius:50%;
 
@@ -964,7 +964,7 @@ section h2{
 
     color:white;
 
-    font-size:24px;
+    font-size:18px;
 
     cursor:pointer;
 
