@@ -238,7 +238,7 @@ function createPetal(){
 }
 
 
-for(let i = 0; i < 18; i++){
+for(let i = 0; i < 12; i++){
 
     petals.push(createPetal());
 
@@ -261,7 +261,7 @@ function animatePetals(){
 
         p.y += p.speed;
 
-        p.x += Math.sin(p.angle) * p.sway;
+        p.x += Math.sin(p.angle) * 0.8;
 
         p.angle += .02;
 
@@ -278,9 +278,14 @@ function animatePetals(){
         ctx.rotate(p.angle);
 
 
-        ctx.fillStyle =
-        "rgba(255,190,210,.45)";
+        const colors = [
+           "rgba(255,220,230,.55)",
+           "rgba(255,245,220,.45)",
+           "rgba(255,255,255,.45)"
+       ];
 
+       ctx.fillStyle =
+       colors[Math.floor(Math.random()*colors.length)];
 
         ctx.beginPath();
 
