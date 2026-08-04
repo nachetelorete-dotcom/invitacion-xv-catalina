@@ -112,7 +112,7 @@ function copyAlias(){
 
 }
 
-function sendConfirmation(){
+function sendConfirmation(persona){
 
     const name = document.getElementById("name").value;
 
@@ -121,8 +121,32 @@ function sendConfirmation(){
     const food = document.getElementById("food").value;
 
 
+    let phone;
+
+    let saludo;
+
+
+
+    if(persona === "padre"){
+
+        phone = "5491167111654";
+
+        saludo = "Sergio";
+
+
+    }else{
+
+
+        phone = "5491167458444";
+
+        saludo = "Carolina";
+
+    }
+
+
+
     const message = 
-    `Hola Catalina ✨
+    `Hola ${saludo} ✨
 
 Soy ${name}.
 
@@ -135,13 +159,12 @@ ${food}
 ¡Gracias por la invitación! 💙`;
 
 
-    const phone = "5492243405031";
-
 
     const url =
     "https://wa.me/" + phone +
     "?text=" +
     encodeURIComponent(message);
+
 
 
     window.open(url, "_blank");
