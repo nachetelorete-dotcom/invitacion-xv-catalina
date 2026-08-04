@@ -876,6 +876,26 @@ section h2{
 
     }
 
+    /* =========================
+   CAPAS
+========================= */
+
+main{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+.welcome{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
     10%{
 
         opacity:.8;
