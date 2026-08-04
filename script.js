@@ -16,6 +16,7 @@ function openInvitation() {
         welcome.remove();
 
         invitation.classList.remove("hidden");
+        invitation.classList.add("show-invitation");
 
         window.scrollTo({
             top:0,
