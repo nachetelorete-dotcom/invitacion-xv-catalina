@@ -981,6 +981,14 @@ section h2{
 
 }
 
+.music-hidden{
+
+    opacity:0;
+
+    pointer-events:none;
+
+}
+
 
 #musicButton:hover{
 
