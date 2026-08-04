@@ -192,6 +192,38 @@ reveals.forEach(section => {
 
 });
 
+/* =========================
+   PÉTALOS
+========================= */
+
+const petalsContainer = document.getElementById("petals");
+
+function createPetal(){
+
+    const petal = document.createElement("div");
+
+    petal.className = "petal";
+
+    petal.style.left = Math.random() * 100 + "vw";
+
+    petal.style.animationDuration = (8 + Math.random() * 8) + "s";
+
+    petal.style.opacity = 0.2 + Math.random() * 0.5;
+
+    petal.style.transform = `scale(${0.6 + Math.random() * 0.8})`;
+
+    petalsContainer.appendChild(petal);
+
+    setTimeout(() => {
+
+        petal.remove();
+
+    },16000);
+
+}
+
+setInterval(createPetal,1200);
+
 
 
 
