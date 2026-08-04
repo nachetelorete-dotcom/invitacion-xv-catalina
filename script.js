@@ -164,8 +164,26 @@ function changeSlide(direction){
     }
 
 
-    document.getElementById("slideImage").src =
-    "assets/foto" + currentSlide + ".jpg";
+    const image = document.getElementById("slideImage");
+
+
+    image.classList.add("fade");
+
+
+    setTimeout(() => {
+
+        image.src =
+        "assets/foto" + currentSlide + ".jpg";
+
+
+        image.onload = () => {
+
+            image.classList.remove("fade");
+
+        };
+
+
+    },400);
 
 }
 
