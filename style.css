@@ -882,5 +882,34 @@ section h2{
 
 }
 
+/* =========================
+   SALIDA BIENVENIDA
+========================= */
+
+.fade-out{
+
+    animation:
+    desaparecer 1s ease forwards;
+
+}
+
+
+@keyframes desaparecer{
+
+    from{
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+    }
+
+}
+
 
 
