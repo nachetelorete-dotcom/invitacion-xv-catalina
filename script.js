@@ -221,19 +221,25 @@ function createPetal(){
 
     return {
 
-        x: Math.random() * canvas.width,
+    x: Math.random() * canvas.width,
 
-        y: -20,
+    y: Math.random() * canvas.height,
 
-        size: 8 + Math.random() * 8,
+    size: 6 + Math.random() * 10,
 
-        speed: 1 + Math.random() * 2,
+    speed: 0.4 + Math.random() * 1.2,
 
-        sway: Math.random() * 2,
+    sway: Math.random() * 1.5,
 
-        angle: Math.random() * Math.PI * 2
+    angle: Math.random() * Math.PI * 2,
 
-    };
+    opacity: 0.25 + Math.random() * 0.35,
+
+    color: Math.random() > 0.8
+    ? "rgba(201,162,39,"
+    : "rgba(255,220,230,"
+
+};
 
 }
 
@@ -285,19 +291,19 @@ function animatePetals(){
        ];
 
        ctx.fillStyle =
-       colors[Math.floor(Math.random()*colors.length)];
+       p.color + p.opacity + ")";
 
-        ctx.beginPath();
+       ctx.beginPath();
 
-        ctx.ellipse(
-            0,
-            0,
-            p.size,
-            p.size / 2,
-            0,
-            0,
-            Math.PI * 2
-        );
+       ctx.ellipse(
+           0,
+           0,
+           p.size,
+           p.size / 2,
+           0,
+           0,
+           Math.PI * 2
+);
 
 
         ctx.fill();
